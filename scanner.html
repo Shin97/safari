@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html>
+<body>
 <label>信用卡號碼: 
     <input name="cardNumber" smopname="num" id="cardNumber-CC" class="cardNumber" type="text" value="" pattern="[0-9]*">
 </label>
@@ -9,3 +12,18 @@
 <label>年份: 
     <input name="creditCardYear" smopname="num" id="cardYear" class="cardYear" type="text" value="" pattern="[0-9]*">
 </label>
+
+</body>
+
+<script type="text/javascript">  
+    let deferredPrompt;
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+        // Prevent Chrome 67 and earlier from automatically showing the prompt
+        e.preventDefault();
+        // Stash the event so it can be triggered later.
+        deferredPrompt = e;
+         // Update UI notify the user they can add to home screen
+        btnAdd.style.display = 'block';
+    });
+</script>  
