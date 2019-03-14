@@ -3,12 +3,12 @@
   "name": "Ewebs",
   "icons": [
     {
-      "src": "/image/icons-192.png",
+      "src": "/safari/image/icons-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/images/icons-512.png",
+      "src": "/safari/images/icons-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
